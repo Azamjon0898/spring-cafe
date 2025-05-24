@@ -4,6 +4,13 @@
 
 <body>
   <div class="signup-container">
+    <div class="background-image-wrapper">
+      <img
+        src="/uploads/home-page/homepage.jpg"
+        alt="Background"
+        class="background-image"
+      />
+    </div>
     <form
       onsubmit="return validateSignupForm()"
       action="/admin/signup"
@@ -11,18 +18,41 @@
       enctype="multipart/form-data"
     >
       <div class="signup-frame" style="width: 650px">
-        <div class="signup-top">
-          <span>Signup</span>
-          <div>Go back <a href="/admin" style="color: #6440fb">Home</a></div>
-          <p>
-            Already signed up?
-            <a href="/admin/login" style="color: #6440fb">Login</a>
-          </p>
+        <div class="signup-input-frame">
+          <div class="media-frame">
+            <img class="upload-img-frame" src="/img/cafe.jpg" />
+            <div class="upload-container">
+              <div
+                class="file-box bs3-primary preview-image"
+                style="margin-top: 25px; display: flex"
+              >
+                <input
+                  class="upload-name"
+                  value="Choose image"
+                  disabled="disabled"
+                />
+                <label for="input-file" class="file-input-label"
+                  >Upload Image</label
+                >
+                <input
+                  type="file"
+                  id="input-file"
+                  class="upload-hidden form-control-file member-image"
+                  name="memberImage"
+                />
+              </div>
+              <p class="thumbnail-desc">
+                Please upload restaurant image.<br />
+                Attention only:.jpg, .jpeg, or .png. <br />
+                formats allowed!
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="sign-input-frame" style="justify-content: space-between">
           <div class="sign-up-frame">
-            <label>Restaurant *</label>
+            <label>Admin *</label>
             <input
               type="text"
               name="memberNick"
@@ -65,44 +95,15 @@
           </div>
         </div>
 
-        <div class="signup-input-frame">
-          <div class="media-frame">
-            <img class="upload-img-frame" src="/img/default.jpeg" />
-            <div class="upload-container">
-              <span class="media-text">Product image</span>
-              <div
-                class="file-box bs3-primary preview-image"
-                style="margin-top: 25px; display: flex"
-              >
-                <input
-                  class="upload-name"
-                  value="Choose image"
-                  disabled="disabled"
-                />
-                <label for="input-file" class="file-input-label"
-                  >Upload Image</label
-                >
-                <input
-                  type="file"
-                  id="input-file"
-                  class="upload-hidden form-control-file member-image"
-                  name="memberImage"
-                />
-              </div>
-              <p class="thumbnail-desc">
-                Please upload restaurant image.<br />
-                Attention only:.jpg, .jpeg, or .png. <br />
-                formats allowed!
-              </p>
-            </div>
-          </div>
-        </div>
-
         <input name="memberType" value="RESTAURANT" hidden />
 
         <button class="signup-btn btn" name="signup" type="submit">
           Signup
         </button>
+        <div class="button-container">
+          <a href="/admin" class="home-button">Home</a>
+          <a href="/admin/login" class="login-button">Login</a>
+        </div>
       </div>
     </form>
   </div>

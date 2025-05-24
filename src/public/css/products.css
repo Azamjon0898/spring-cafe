@@ -1,34 +1,49 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
 .products-container {
   position: relative;
-  width: auto;
-  height: auto;
-  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(-45deg, #110303bf, #e37813, #011c1aba, #968383);
+  background: linear-gradient(-45deg, #0bd79a, #d8ed51, #219bc7, #7cfcde);
+  width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
-.products-container a {
-  text-decoration: none;
-  color: #000000;
+.navigation-menu {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
 }
 
-.products-container .nav-item a {
-  color: #e3c08d;
+.nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
 }
 
-.products-container .nav-item a.disabled {
-  color: #898071;
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.products-container .navigation-menu {
-  position: absolute;
-  z-index: 10000;
-  top: 1%;
-  color: #efefee;
-  font-size: 40px;
-  font-family: monospace;
+.nav-link:hover {
+  color: #ccc !important;
 }
 
 .products-container .restaurant-menu-frame {
@@ -36,7 +51,6 @@
   padding-bottom: 80px;
   width: 100%;
   height: auto;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +59,7 @@
 .products-container .restaurant-menu-frame .board {
   position: relative;
   margin-top: 100px;
-  width: 1320px;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -67,7 +81,6 @@
   margin-top: 20px;
   width: 100%;
   height: auto;
-
   display: none;
   flex-direction: column;
   align-items: center;
