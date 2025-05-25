@@ -4,18 +4,17 @@
 
 <body>
   <form class="login-container" action="/admin/login" METHOD="POST">
+    <div class="background-image-wrapper">
+      <img
+        src="/uploads/home-page/homepage.jpg"
+        alt="Background"
+        class="background-image"
+      />
+    </div>
     <div class="login-frame">
-      <div class="login-top">
-        <span>Enter</span>
-        <div>Go back <a href="/admin" style="color: #ffff">Home</a></div>
-        <p>
-          Not registered yet?
-          <a href="/admin/signup" style="color: #ffff">Signup</a>
-        </p>
-      </div>
       <div class="login-input-frame">
         <div class="login-input-container">
-          <label>Restaurant *</label>
+          <label>Admin *</label>
           <input
             type="text"
             name="memberNick"
@@ -38,6 +37,12 @@
         </div>
       </div>
       <button class="login-btn btn" name="login" type="submit">Login</button>
+
+      <!-- Alahida tugmalar -->
+      <div class="button-container">
+        <a href="/admin" class="home-button">Home</a>
+        <a href="/admin/signup" class="signup-btn">Signup</a>
+      </div>
     </div>
   </form>
 </body>
