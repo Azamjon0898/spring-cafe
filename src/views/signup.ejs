@@ -11,6 +11,7 @@
         class="background-image"
       />
     </div>
+
     <form
       onsubmit="return validateSignupForm()"
       action="/admin/signup"
@@ -22,7 +23,9 @@
           <div class="media-frame">
             <div class="upload-container">
               <div>
-                <img class="upload-img-frame" src="/img/cafe.jpg" />
+                <div class="upload-img-frame">
+                  <img src="/img/cafe.jpg" alt="Preview" />
+                </div>
               </div>
               <div
                 class="file-box bs3-primary preview-image"
@@ -50,26 +53,32 @@
 
         <div class="sign-input-frame" style="justify-content: space-between">
           <div class="sign-up-frame">
-            <label>Admin *</label>
+            <label>Nickname *</label>
             <input
               type="text"
               name="memberNick"
               class="member-nick"
-              placeholder="Username"
-              value=""
+              placeholder="Enter username"
+              minlength="8"
+              maxlength="20"
+              required
             />
           </div>
+
           <div class="sign-up-frame">
             <label>Phone *</label>
             <input
               type="text"
               name="memberPhone"
               class="member-phone"
-              placeholder="Phone"
-              value=""
+              placeholder="000-0000-0000"
+              maxlength="13"
+              pattern="\d{3}-\d{4}-\d{4}"
+              required
             />
           </div>
         </div>
+
         <div class="sign-input-frame" style="justify-content: space-between">
           <div class="sign-up-frame">
             <label>Password *</label>
@@ -78,7 +87,9 @@
               name="memberPassword"
               class="member-password"
               placeholder="Password"
-              value=""
+              minlength="8"
+              maxlength="20"
+              required
             />
           </div>
           <div class="sign-up-frame">
@@ -88,14 +99,17 @@
               name="confirmPassword"
               class="confirm-password"
               placeholder="Repeat password"
-              value=""
+              minlength="8"
+              maxlength="20"
+              required
             />
           </div>
         </div>
-        
+
         <input name="memberType" value="RESTAURANT" hidden />
 
         <button class="signup-btn" name="signup" type="submit">Signup</button>
+
         <div class="button-container">
           <a href="/admin" class="home-button">Home</a>
           <a href="/admin/login" class="login-button">Login</a>
@@ -108,3 +122,5 @@
 </body>
 
 <%- include('includes/footer') %>
+
+<script type="text/javascript" src="/js/signup.js"></script>
