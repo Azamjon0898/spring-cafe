@@ -116,10 +116,10 @@ html {
   cursor: pointer;
 }
 
-.products-container .new-dish-txt:hover {
+/* .products-container .new-dish-txt:hover {
   background-color: #fff;
-  color: #33a0ff;
-}
+  color: rgba(0, 0, 0, 0.8);;
+} */
 
 .products-container .long-input {
   position: relative;
@@ -403,3 +403,31 @@ table th {
 .products-container .slider.round:before {
   border-radius: 50%;
 }
+
+/* <option value="DRINK" selected>Drink</option>
+    <option value="DISH">Dessert</option>
+    <option value="OTHER">Other</option>
+  </select>
+</div>
+
+<div class="half-input" id="product-volume">
+  <label>Drink Volume</label>
+  <select class="product-volume" name="productVolume">
+    <option value="0.5" selected>0,5 liters</option>
+    <option value="1">1 liters</option>
+    <option value="1.2">1,2 liters</option>
+    <option value="1.5">1,5 liters</option>
+    <option value="2">2 liters</option>
+  </select>
+</div>
+
+<div class="half-input" id="product-collection"  style="display: none">
+  <label>Desert Volume</label>
+  <select class="product-size" name="productSize">
+    <option value="SMALL">Small piece</option>
+    <option value="NORMAL" selected>Normal piece</option>
+    <option value="LARGE">f</option>
+    <option value="SET">Set</option>
+  </select>
+</div>
+</div> */

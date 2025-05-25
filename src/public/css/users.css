@@ -110,13 +110,23 @@ html {
 }
 
 .users-container .header-name {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 15px;
+  border-radius: 10px;
   font-family: "Source Serif Pro";
+  font-size: small;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 25px;
   color: #ffffff;
+  cursor: pointer;
 }
+/* 
+.users-container .header-name:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+} */
 
 .users-container select:focus {
   min-width: 90%;
