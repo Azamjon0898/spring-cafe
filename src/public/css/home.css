@@ -35,7 +35,7 @@ html {
 }
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   padding: 0.5rem 1rem;
 }
@@ -47,7 +47,7 @@ html {
 }
 
 .nav-link:hover {
-  color: aqua !important;
+  color: #33a0ff !important;
 }
 
 .navigation-start {
@@ -55,7 +55,7 @@ html {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   padding: 1rem;
@@ -69,5 +69,5 @@ html {
 }
 
 .navigation-start span:hover {
-  color: aqua;
+  color: #33a0ff;
 }
