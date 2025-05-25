@@ -47,7 +47,7 @@ html {
 }
 
 .nav-link:hover {
-  color: #ccc !important;
+  color: aqua !important;
 }
 
 .navigation-start {
@@ -62,4 +62,12 @@ html {
   z-index: 1000;
   font-weight: bold;
   font-size: larger;
+}
+
+.navigation-start span {
+  cursor: pointer;
+}
+
+.navigation-start span:hover {
+  color: aqua;
 }
