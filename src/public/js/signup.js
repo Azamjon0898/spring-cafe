@@ -32,7 +32,6 @@ $(function () {
         } else if (uploadFile) {
           const filename = uploadFile.name;
 
-          // To'g'rilangan qism — rasm tagini to'g'ridan-to'g'ri yangilash
           $(".upload-img-frame img")
             .attr("src", URL.createObjectURL(uploadFile))
             .addClass("success");
@@ -60,8 +59,8 @@ function validateSignupForm() {
     return false;
   }
 
-  if (memberNick.length < 8 || memberNick.length > 20) {
-    alert("Username must be between 8 and 20 characters.");
+  if (memberNick.length < 5 || memberNick.length > 20) {
+    alert("Username must be between 5 and 20 characters.");
     return false;
   }
 
