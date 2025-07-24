@@ -45,6 +45,7 @@
                 <th scope="col">Product Name</th>
                 <th scope="col">Product Type</th>
                 <th scope="col">Product Volume</th>
+                <th scope="col">Product Description</th>
                 <th scope="col">Product Price</th>
                 <th scope="col">Product Left Count</th>
                 <th scope="col">Status</th>
@@ -61,7 +62,10 @@
                 <%= value.productCollection === 'DRINK'? value.productVolume :
                 value.productSize %>
               </td>
-
+              <td>
+                <%= value.productCollection === 'SET'? value.productNot :
+                value.productNot %>
+              </td>
               <td><%= value.productPrice %></td>
               <td><%= value.productLeftCount %></td>
               <td>
@@ -164,6 +168,15 @@
                 <option value="SMALL" selected>Small</option>
                 <option value="NORMAL">Normal</option>
                 <option value="LARGE">Large</option>
+              </select>
+            </div>
+
+            <div class="half-input" id="product-not" style="display: none">
+              <label>Set Volume</label>
+              <select class="product-not" name="productNot">
+                <option value="SMALL" selected>biiig</option>
+                <option value="NORMAL">niiig</option>
+                <option value="LARGE">kooog</option>
               </select>
             </div>
 
